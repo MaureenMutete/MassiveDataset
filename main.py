@@ -5,7 +5,7 @@ This is the main python file
 import pandas as pd
 import json
 import os
-
+# Question 1
 folder_path = 'data/massive'
 dfs = []
 for filename in os.listdir(folder_path):
@@ -32,6 +32,7 @@ for index in range(len(dfs)):
         dframe = pd.DataFrame(testdata)
         dframe.to_excel(f"excel/en-{filename[:2]}.xlsx")
 
+# Question 2 (a)
 en_train = dfs[10][dfs[10]['partition']=='train']
 en_train.to_json('json/en_train.jsonl',orient='records',lines=True)
 
