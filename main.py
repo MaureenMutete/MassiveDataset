@@ -32,5 +32,17 @@ for index in range(len(dfs)):
         dframe = pd.DataFrame(testdata)
         dframe.to_excel(f"excel/en-{filename[:2]}.xlsx")
 
+en_train = dfs[10][dfs[10]['partition']=='train']
+en_train.to_json('json/en_train.jsonl',orient='records',lines=True)
+
+en_test = dfs[10][dfs[10]['partition']=='test']
+en_test.to_json('json/en_test.jsonl',orient='records',lines=True)
+
+en_dev = dfs[10][dfs[10]['partition']=='dev']
+en_dev.to_json('json/en_dev.jsonl',orient='records',lines=True)
+
+
+de_train = dfs[8][dfs[8]['partition']=='train']
+de_train.to_json('json/de_train.jsonl',orient='records',lines=True)
 
 
