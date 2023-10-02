@@ -47,3 +47,22 @@ de_train = dfs[8][dfs[8]['partition']=='train']
 de_train.to_json('json/de_train.jsonl',orient='records',lines=True)
 
 
+de_test = dfs[8][dfs[8]['partition']=='test']
+de_test.to_json('json/de_test.jsonl',orient='records',lines=True)
+
+de_dev = dfs[8][dfs[8]['partition']=='dev']
+de_dev.to_json('json/de_dev.jsonl',orient='records',lines=True)
+
+
+sw_train = dfs[42][dfs[42]['partition']=='train']
+sw_train.to_json('json/sw_train.jsonl',orient='records',lines=True)
+
+
+
+sw_test = dfs[42][dfs[42]['partition']=='test']
+sw_test.to_json('json/sw_test.jsonl',orient='records',lines=True)
+
+sw_dev = dfs[42][dfs[42]['partition']=='dev']
+sw_dev.to_json('json/sw_dev.jsonl',orient='records',lines=True)
+
+
