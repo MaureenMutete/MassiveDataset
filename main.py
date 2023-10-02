@@ -1,6 +1,3 @@
-"""
-This is the main python file
-"""
 
 import pandas as pd
 import json
