@@ -65,4 +65,20 @@ sw_test.to_json('json/sw_test.jsonl',orient='records',lines=True)
 sw_dev = dfs[42][dfs[42]['partition']=='dev']
 sw_dev.to_json('json/sw_dev.jsonl',orient='records',lines=True)
 
+#Question2b
+testdatas = {
+    'id': dfs[10]['id'],
+    'en-utt': en_train['utt'],
+    'de-utt': de_train['utt'],
+    'sw-utt': sw_train['utt']
 
+}
+
+traintranslations = pd.DataFrame(testdatas)
+
+traintranslations.to_json('json/traintranslations.json', orient='records')
+
+with open('json/traintranslations.json', 'r') as json_file:
+    data = json.load(json_file)
+
+print(json.dumps(data,indent=10))
