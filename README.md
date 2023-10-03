@@ -55,7 +55,7 @@ After installing python, create an environment. The steps are as follows:
 
       Create a Python3 project with the structure typical for projects in PyCharm or your preferred IDE.
 
-   ## Relevant Sources
+## Relevant Sources
    In order for the project to be complete, extensive research was done from articles of related works and youtube tutorials.
 
 
