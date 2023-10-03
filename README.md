@@ -29,7 +29,9 @@ One can download and install it from the link: [Python](https://www.python.org/d
 
    To install this library, type the following command
   
-   `pip install pandas`
+   ```
+  pip install pandas
+   ```
   
 - *OS*
 
