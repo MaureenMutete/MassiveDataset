@@ -15,6 +15,17 @@ print(f'{len(dfs)} files have been converted')
 
 dataframes = []
 
+lan_list = []
+
+for file in os.listdir('massive'):
+    lan_list.append(file)
+
+print(lan_list)
+
+for element in lan_list:
+    if element.startswith('en'):
+        print(lan_list.index(element))
+
 for index in range(len(dfs)):
     for filename in os.listdir(folder_path):
 
